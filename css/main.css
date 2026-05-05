@@ -1,0 +1,60 @@
+:root {
+    --primary-text-color: black;
+    --reverse-text-color: whitesmoke;
+}
+body {    
+    margin-top: 0;
+    margin-right: 0;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+header {
+    background-color: #142D21;
+    margin-left: -8px;
+    display: flex;
+    justify-content: space-between;
+}
+header > button {
+    margin: 6px;
+    height: 40px;
+    width: 40px;
+}
+.navigation {
+    margin-top: 10px;
+}
+.navigation > a {
+    text-decoration: none;
+    color: var();
+    color: var(--reverse-text-color);
+    font-size: 150%;
+    margin: 8px;
+}
+.banner {
+    text-align: center;
+    background-image: url("/assets/images/forest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 60vw;
+    position: absolute;
+    left: 0;
+    top: 52px;
+    color: var(--reverse-text-color);
+}
+.banner > h1 {
+    margin-top: 100px;
+}
+h1 {
+    font-weight: 400;
+    font-size: 7vw;
+    text-shadow: 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black;
+}
+h3 {
+    margin-top: -4.5vw;
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-size: 3vw;
+    text-shadow: 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black;
+}
