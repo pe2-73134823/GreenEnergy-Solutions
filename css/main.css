@@ -85,6 +85,9 @@ header > button:active {
     animation-name: small-slide-up;
     border-radius: 10px;
     display: flex;
+    transition: 500ms;
+    cursor: pointer;
+    user-select: none;
 }
 .banner-card > img {
     aspect-ratio: 1/1;
@@ -96,8 +99,8 @@ header > button:active {
     border-radius: 10px;
 }
 .banner-card > div {
+    width: 100%;
     margin-top: 0px;
-    margin-left: 50px;
 }
 .banner-card > div > h4 {
     margin-top: 15px;
@@ -106,9 +109,23 @@ header > button:active {
     margin-top: -15px;
 }
 .banner-card > div > img {
-    width: 10px;
-    height: 10px;
-    fill: white;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    transition: 300ms;
+}
+.banner-card:hover > div > img {
+    scale: 140% 140%;
+    translate: 4px -4px;
+    transition: 300ms;
+}
+.banner-card:hover {
+  transform: translateY(-3px);
+  transition: 500ms;
+}
+.banner-card:active {
+  transform: translateY(2px);
+  transition: 200ms;
 }
 @keyframes small-slide-up {
   from {
@@ -137,10 +154,68 @@ h3 {
     position: absolute;
     display: flex;
     justify-content: center;
+    width: 100%;
+    margin: -8px;
+    margin-top: 850px;
+    flex-direction: column;
+    justify-content: start;
+    align-content: stretch;
+    align-items: center;
 }
 .newscard {
     background-color: #cff7d3;
     width: 80%;
     max-width: 400px;
     height: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-radius: 10px;
+    display: flex;
+    transition: 500ms;
+    cursor: pointer;
+    user-select: none;
+}
+.newscard > img {
+    aspect-ratio: 1/1;
+    height: 100%;
+    object-fit: cover;
+    align-self: flex-start;
+    justify-content: flex-start;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+.newscard > div {
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: stretch;
+    align-items: center;
+}
+.newscard > div > h4 {
+    margin-top: 15px;
+}
+.newscard > div > p {
+    margin-top: -15px;
+}
+.newscard > div > img {
+    margin-top: -7px;
+    width: 20px;
+    height: 20px;
+    filter: invert();
+    transition: 300ms;
+}
+.newscard:hover > div > img {
+    scale: 140% 140%;
+    translate: 4px -4px;
+    transition: 300ms;
+}
+.newscard:hover {
+  transform: translateY(-3px);
+  transition: 500ms;
+}
+.newscard:active {
+  transform: translateY(2px);
+  transition: 200ms;
 }
