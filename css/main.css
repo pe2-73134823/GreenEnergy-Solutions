@@ -18,8 +18,23 @@ header {
 }
 header > button {
     margin: 6px;
+    margin-right: 10px;
+    margin-left: 10px;
     height: 40px;
     width: 40px;
+    background: none;
+    border: none;
+    transition: all linear 80ms;
+    cursor: pointer;
+}
+header > button > img {
+    width: 30px;
+}
+header > button:hover {
+  transform: translateY(-1px);
+}
+header > button:active {
+  transform: translateY(2px);
 }
 .navigation {
     margin-top: 10px;
