@@ -1,6 +1,7 @@
 :root {
     --primary-text-color: black;
     --reverse-text-color: whitesmoke;
+    --header-footer:  #142D21;
 }
 body {    
     margin-top: 0;
@@ -11,7 +12,7 @@ body {
     font-style: normal;
 }
 header {
-    background-color: #142D21;
+    background-color: var(--header-footer);
     margin-left: -8px;
     display: flex;
     justify-content: space-between;
@@ -235,4 +236,18 @@ h3 {
 .newscard:active {
   transform: translateY(2px);
   transition: 200ms;
+}
+footer {
+    color: var(--reverse-text-color);
+    position: absolute;
+    background-color: var(--header-footer);
+    height: 200px;
+    width: 100%;
+    bottom: -700px;
+    margin-left: -8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-content: stretch;
+    align-items: center;
 }
