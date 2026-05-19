@@ -88,6 +88,7 @@ header > button:active {
     display: flex;
     transition: 500ms;
     cursor: pointer;
+    -webkit-user-select: none;
     user-select: none;
 }
 .banner-card > img {
@@ -191,6 +192,7 @@ h3 {
     display: flex;
     transition: 500ms;
     cursor: pointer;
+    -webkit-user-select: none;
     user-select: none;
 }
 .newscard > img {
