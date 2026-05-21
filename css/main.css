@@ -30,6 +30,7 @@ header > button {
 }
 header > button > img {
     width: 30px;
+    height: 30px;
 }
 header > button:hover {
     transform: translateY(-1px);
