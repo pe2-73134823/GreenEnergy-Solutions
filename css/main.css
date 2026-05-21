@@ -276,6 +276,11 @@ footer > div > div > ul > li > a {
     color: var(--reverse-text-color);
     text-decoration: none;
 }
+footer > a {
+    color: var(--reverse-text-color);
+    text-decoration: none;
+    margin-bottom: -15px;
+}
 .col1 {
     grid-column: 1;
 }
