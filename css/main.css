@@ -282,3 +282,19 @@ footer > div > div > ul > li > a {
 .col3 {
     grid-column: 3;
 }
+
+@media only screen and (max-width: 500px) {
+    .navigation {
+        margin-top: 13px;
+    }
+    .navigation > a {
+        font-size: 140%;
+        margin: 3px;
+    }
+    .newscards {
+        margin-top: 950px;
+    }
+    footer {
+        margin-top: 1400px;
+    }
+}
