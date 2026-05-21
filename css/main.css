@@ -47,6 +47,9 @@ header > button:active {
     font-size: 150%;
     margin: 8px;
 }
+.currentTab {
+    text-decoration: underline !important;
+}
 .banner {
     text-align: center;
     background-image: url("/assets/images/forest.webp");
