@@ -270,7 +270,7 @@ footer > div > div > ul {
     padding: 0px;
 }
 footer > div > div > ul > li {
-    margin-bottom: 3px;
+    margin-bottom: 7px;
 }
 footer > div > div > ul > li > a {
     color: var(--reverse-text-color);
