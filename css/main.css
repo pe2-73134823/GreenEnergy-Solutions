@@ -296,13 +296,16 @@ footer > a {
         margin-top: 13px;
     }
     .navigation > a {
-        font-size: 140%;
-        margin: 3px;
+        font-size: 120%;
+        margin: 2px;
+    }
+    h4 {
+        font-size: 2vh;
     }
     .newscards {
-        margin-top: 950px;
+        margin-top: 1000px;
     }
     footer {
-        margin-top: 1400px;
+        margin-top: 1450px;
     }
 }
