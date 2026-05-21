@@ -32,10 +32,10 @@ header > button > img {
     width: 30px;
 }
 header > button:hover {
-  transform: translateY(-1px);
+    transform: translateY(-1px);
 }
 header > button:active {
-  transform: translateY(2px);
+    transform: translateY(2px);
 }
 .navigation {
     margin-top: 10px;
