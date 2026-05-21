@@ -240,12 +240,12 @@ h3 {
   transition: 200ms;
 }
 footer {
-    color: var(--reverse-text-color);
     position: absolute;
+    margin-top: 1300px;
+    color: var(--reverse-text-color);
     background-color: var(--header-footer);
     height: 200px;
     width: 100%;
-    bottom: -700px;
     margin-left: -8px;
     display: flex;
     flex-direction: column;
