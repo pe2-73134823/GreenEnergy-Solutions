@@ -17,3 +17,5 @@ hometab-footer
 newstab-footer
 contacttab-footer
 icon-attribution-link
+contact-tagline
+buildings

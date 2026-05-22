@@ -12,15 +12,15 @@
         <header>
             <button id="themeButton" aria-label="Change theme"><img src="assets/icons/paint-roller.svg" alt="" draggable="false"></button>
             <div class="navigation" role="navigation">
-                <a href="index.html">HOME</a>
-                <a href="latest.html">NEWS</a>
-                <a href="contact.html" class="currentTab">CONTACT</a>
+                <a href="index.html" id="hometab">HOME</a>
+                <a href="latest.html" id="newstab">NEWS</a>
+                <a href="contact.html" class="currentTab" id="contacttab">CONTACT</a>
             </div>
-            <button id="langButton" aria-label="Change language"><img src="assets/icons/languages.svg" alt="" draggable="false"></button>
+            <button id="langButton" aria-label="Change language"><img src="assets/icons/languages.svg" alt="" draggable="false" onclick="changeLanguage()"></button>
         </header>
         <div class="contact" role="main">
             <div>
-                <h2>Get in touch</h2>
+                <h2 id="contact-tagline">Get in touch</h2>
                 <span><a href="mailto:123@example.com"><img src="assets/icons/letter.svg" alt="mail"> <span>123@example.com</span></a></span><br>
                 <span><a href="tel:1234567890"><img src="assets/icons/phone.svg" alt="mail"> <span>123-456 78 90</span></a></span><br>
                 <br>
@@ -33,15 +33,15 @@
             <div>
                 <div class="col1">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="latest.html">News</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" id="hometab-footer">Home</a></li>
+                        <li><a href="latest.html" id="newstab-footer">News</a></li>
+                        <li><a href="contact.html" id="contacttab-footer">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col2">
                     <ul>
                         <li><a href="https://facebook.com/">Facebook</a></li>
-                        <li><a href="https://se.linkedin.com/">LinkedIn</a></li>
+                        <li><a href="https://linkedin.com/">LinkedIn</a></li>
                         <li><a href="https://youtube.com/">YouTube</a></li>
                     </ul>
                 </div>
@@ -53,14 +53,14 @@
                     </ul>
                 </div>
             </div>
-            <a href="attribution.html" target="_blank">Icon Attribution</a>
+            <a href="attribution.html" target="_blank" id="icon-attribution-link">Icon Attribution</a>
             <p>Copyright © 2026 GreenEnergy Solutions</p>
         </footer>
     </body>
     <script>
         function copyAdress() {
             navigator.clipboard.writeText("Riksgatan 1, 100 12 Stockholm, Sweden");
-            alert("Adress copied to clipboard");
         }
     </script>
+    <script src="script/translations.js"></script>
 </html>

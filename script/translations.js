@@ -15,7 +15,12 @@ async function langInit(langpicked) {
     let langarray = await loadTxtFile(langfiletofetch);
     let langidarray = await loadTxtFile("assets/translations/ids.txt");
     for (let i = 0; i < langarray.length; i++) {
-        document.getElementById(langidarray[i]).innerHTML = langarray[i];
+        try{
+            document.getElementById(langidarray[i]).innerHTML = langarray[i];
+        } catch(e){
+            
+        }
+        
     }
 }
 async function loadTxtFile(filetofetch) {
