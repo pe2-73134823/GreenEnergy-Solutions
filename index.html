@@ -15,14 +15,14 @@
         <header>
             <button id="themeButton" aria-label="Change theme"><img src="assets/icons/paint-roller.svg" alt="" draggable="false"></button>
             <div class="navigation" role="navigation">
-                <a href="index.html" class="currentTab">HOME</a>
-                <a href="latest.html">NEWS</a>
-                <a href="contact.html">CONTACT</a>
+                <a href="index.html" class="currentTab" id="hometab">HOME</a>
+                <a href="latest.html" id="newstab">NEWS</a>
+                <a href="contact.html" id="contacttab">CONTACT</a>
             </div>
-            <button id="langButton" aria-label="Change language"><img src="assets/icons/languages.svg" alt="" draggable="false"></button>
+            <button id="langButton" onclick="changeLanguage()" aria-label="Change language"><img src="assets/icons/languages.svg" alt="" draggable="false"></button>
         </header>
         <div class="banner" role="banner">
-            <h1>A Sustainable Future</h1>
+            <h1 id="catchphrase">A Sustainable Future</h1>
             <h3>GreenEnergy Solutions</h3>
             <div class="banner-card">
                 <img
@@ -33,19 +33,19 @@
                     draggable="false"
                     alt="Windmill" />
                 <div>
-                    <h4>Getting ready for summer</h4>
-                    <p>Q2 2026 report</p>
+                    <h4 id="Q2-26-title-top">Getting ready for summer</h4>
+                    <p id="Q2-26-sub-top">Q2 2026 report</p>
                     <img src="assets/images/arrow-up-right-svgrepo-com.svg" alt="" draggable="false">
                 </div>
             </div>
             <div class="banner-gradient"></div>
         </div>
         <div class="our-mission" role="main">
-            <h2>Our Mission</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore eveniet placeat dicta ex qui ullam non consequuntur, dolorum asperiores molestias quasi natus id in, architecto soluta. Provident, distinctio? Aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore eveniet placeat dicta ex qui ullam non consequuntur, dolorum asperiores molestias quasi natus id in, architecto soluta. Provident, distinctio? Aliquam.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore eveniet placeat dicta ex qui ullam non consequuntur, dolorum asperiores molestias quasi natus id in, architecto soluta. Provident, distinctio? Aliquam.</p>
+            <h2 id="about-tagline">Our Mission</h3>
+            <p id="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore eveniet placeat dicta ex qui ullam non consequuntur, dolorum asperiores molestias quasi natus id in, architecto soluta. Provident, distinctio? Aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore eveniet placeat dicta ex qui ullam non consequuntur, dolorum asperiores molestias quasi natus id in, architecto soluta. Provident, distinctio? Aliquam.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore eveniet placeat dicta ex qui ullam non consequuntur, dolorum asperiores molestias quasi natus id in, architecto soluta. Provident, distinctio? Aliquam.</p>
         </div>
         <div class="newscards">
-            <h2>Recent Articles</h4>
+            <h2 id="recent-articles-title">Recent Articles</h4>
             <div class="newscard">
                 <img
                     srcset="assets/images/jwvein-windmill-128.webp 480w, assets/images/jwvein-windmill-256.webp 490w"
@@ -55,24 +55,24 @@
                     draggable="false"
                     alt="Windmill" />
                 <div>
-                    <h4>Getting ready for summer</h4>
-                    <p>Q2 2026 report</p>
+                    <h4 id="Q2-26-title">Getting ready for summer</h4>
+                    <p id="Q2-26-sub">Q2 2026 report</p>
                     <img src="assets/images/arrow-up-right-svgrepo-com.svg" alt="" draggable="false">
                 </div>
             </div>
             <div class="newscard">
                 <img src="assets/images/kapa65-leaves-580369.jpg" alt="" draggable="false">
                 <div>
-                    <h4>Wintergreen</h4>
-                    <p>Q1 2026 report</p>
+                    <h4 id="Q1-26-title">Wintergreen</h4>
+                    <p id="Q1-26-sub">Q1 2026 report</p>
                     <img src="assets/images/arrow-up-right-svgrepo-com.svg" alt="" draggable="false">
                 </div>
             </div>
             <div class="newscard">
                 <img src="assets/images/katerinavulcova-leaves-4574860.jpg" alt="" draggable="false">
                 <div>
-                    <h4>Autumn Colors</h4>
-                    <p>Q2 2026 report</p>
+                    <h4 id="Q4-25-title">Autumn Colors</h4>
+                    <p id="Q4-25-sub">Q4 2025 report</p>
                     <img src="assets/images/arrow-up-right-svgrepo-com.svg" alt="" draggable="false">
                 </div>
             </div>
@@ -81,9 +81,9 @@
             <div>
                 <div class="col1">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="latest.html">News</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" id="hometab-footer">Home</a></li>
+                        <li><a href="latest.html" id="newstab-footer">News</a></li>
+                        <li><a href="contact.html" id="contacttab-footer">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col2">
@@ -101,8 +101,10 @@
                     </ul>
                 </div>
             </div>
-            <a href="attribution.html" target="_blank">Icon Attribution</a>
+            <a href="attribution.html" target="_blank" id="icon-attribution-link">Icon Attribution</a>
             <p>Copyright © 2026 GreenEnergy Solutions</p>
         </footer>
     </body>
+    <script src="script/main.js"></script>
+    <script src="script/translations.js"></script>
 </html>
