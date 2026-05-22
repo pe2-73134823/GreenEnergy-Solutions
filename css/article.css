@@ -1,0 +1,36 @@
+.content {
+    margin:40px auto;
+    max-width:650px;
+    line-height:1.6;
+    font-size:18px;
+    color: var(--text-color);
+    padding:0 10px
+}
+h2,h3 {
+    line-height:1.4;
+    text-align: center;
+}
+.content > img {
+    margin:40px auto;
+    max-width:300px;
+    padding:0 150px;
+}
+footer {
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 645px) {
+    .content > img {
+        padding: 0 0vw;
+        padding-left: 15vw;
+        margin: 20px auto;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .content > img {
+        padding: 0 0vw;
+        padding-left: 10vw;
+        margin: 20px auto;
+        width: 200px;
+    }
+}
