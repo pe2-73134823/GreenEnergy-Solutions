@@ -5,44 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>GreenEnergy Solutions</title>
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/contact.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <meta name="description" content="Home - GreenEnergy Solutions, your company for a sustainable future." />
+        <meta name="description" content="Adress and contact details for GreenEnergy Solutions, your company for a sustainable future." />
     </head>
     <body>
         <header>
             <button id="themeButton" aria-label="Change theme"><img src="assets/icons/paint-roller.svg" alt="" draggable="false"></button>
             <div class="navigation" role="navigation">
-                <a href="index.html" class="currentTab" id="hometab">HOME</a>
-                <a href="news.html" id="newstab">NEWS</a>
+                <a href="index.html" id="hometab">HOME</a>
+                <a href="news.html" class="currentTab" id="newstab">NEWS</a>
                 <a href="contact.html" id="contacttab">CONTACT</a>
             </div>
-            <button id="langButton" onclick="changeLanguage()" aria-label="Change language"><img src="assets/icons/languages.svg" alt="" draggable="false"></button>
+            <button id="langButton" aria-label="Change language"><img src="assets/icons/languages.svg" alt="" draggable="false" onclick="changeLanguage()"></button>
         </header>
-        <div class="banner" role="banner">
-            <h1 id="catchphrase">A Sustainable Future</h1>
-            <img src="assets/images/GreenEnergy-Solutions.svg" alt="GreenEnergy Solutions">
-            <div class="banner-card">
-                <img
-                    srcset="assets/images/jwvein-windmill-128.webp 480w, assets/images/jwvein-windmill-256.webp 490w"
-                    sizes="(width <= 400px) 400px,
-                        400px"
-                    src="assets/images/jwvein-windmill-256.webp"
-                    draggable="false"
-                    alt="Windmill" />
-                <div>
-                    <h4 id="Q2-26-title-top">Getting ready for summer</h4>
-                    <p id="Q2-26-sub-top">Q2 2026 report</p>
-                    <img src="assets/icons/arrow-up-right.svg" alt="" draggable="false">
-                </div>
-            </div>
-            <div class="banner-gradient"></div>
-        </div>
-        <div class="our-mission" role="main">
-            <h2 id="about-tagline">Our Mission</h3>
-            <p id="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore eveniet placeat dicta ex qui ullam non consequuntur, dolorum asperiores molestias quasi natus id in, architecto soluta. Provident, distinctio? Aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore eveniet placeat dicta ex qui ullam non consequuntur, dolorum asperiores molestias quasi natus id in, architecto soluta. Provident, distinctio? Aliquam.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolore eveniet placeat dicta ex qui ullam non consequuntur, dolorum asperiores molestias quasi natus id in, architecto soluta. Provident, distinctio? Aliquam.</p>
-        </div>
-        <div class="newscards">
-            <h2 id="recent-articles-title">Recent Articles</h4>
+        <div class="newscards" style="margin-top: 0px;">
+            <h2 id="all-articles-title">All Articles</h4>
             <div class="newscard">
                 <img
                     srcset="assets/images/jwvein-windmill-128.webp 480w, assets/images/jwvein-windmill-256.webp 490w"
@@ -85,6 +63,14 @@
                     <img src="assets/icons/arrow-up-right.svg" alt="" draggable="false">
                 </div>
             </div>
+            <div class="newscard">
+                <img src="assets/icons/leaf.svg" alt="leaf">
+                <div>
+                    <h4 id="Q3-25-title">Who are we?</h4>
+                    <p id="Q3-25-sub">Intruducing ourselves</p>
+                    <img src="assets/icons/arrow-up-right.svg" alt="" draggable="false">
+                </div>
+            </div>
         </div>
         <footer role="contentinfo">
             <div>
@@ -114,6 +100,10 @@
             <p>Copyright © 2026 GreenEnergy Solutions</p>
         </footer>
     </body>
-    <script src="script/main.js"></script>
+    <script>
+        function copyAdress() {
+            navigator.clipboard.writeText("Riksgatan 1, 100 12 Stockholm, Sweden");
+        }
+    </script>
     <script src="script/translations.js"></script>
 </html>
