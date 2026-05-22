@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Inter";
-  src: url("/assets/fonts/Inter_18pt-Medium.woff2") format("woff2");
+  src: url("https://pe2-73134823.github.io/GreenEnergy-Solutions/assets/fonts/Inter_18pt-Medium.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -61,7 +61,7 @@ header > button:active {
 }
 .banner {
     text-align: center;
-    background-image: url("/GreenEnergy-Solutions/assets/images/forest.webp");
+    background-image: url("https://pe2-73134823.github.io/GreenEnergy-Solutions/assets/images/forest.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-size: length;
