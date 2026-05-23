@@ -11,13 +11,13 @@
     </head>
     <body>
         <header>
-            <button id="themeButton" aria-label="Change theme"><img src="assets/icons/paint-roller.svg" alt="" draggable="false"></button>
+            <button id="themeButton" onclick="changeTheme()" aria-label="Change theme"><img src="assets/icons/paint-roller.svg" alt="" draggable="false"></button>
             <div class="navigation" role="navigation">
                 <a href="index.html" id="hometab">HOME</a>
                 <a href="news.html" id="newstab">NEWS</a>
                 <a href="contact.html" class="currentTab" id="contacttab">CONTACT</a>
             </div>
-            <button id="langButton" aria-label="Change language"><img src="assets/icons/languages.svg" alt="" draggable="false" onclick="changeLanguage()"></button>
+            <button id="langButton" onclick="changeLanguage()"" aria-label="Change language"><img src="assets/icons/languages.svg" alt="" draggable="false"></button>
         </header>
         <div class="contact" role="main">
             <div class="contact-info">
@@ -67,6 +67,7 @@
             navigator.clipboard.writeText("Riksgatan 1, 100 12 Stockholm, Sweden");
         }
     </script>
+    <script src="script/themes.js"></script>
     <script src="script/translations.js"></script>
     <script src="script/googlemapscookie.js"></script>
 </html>

@@ -13,7 +13,7 @@ function changeTheme() {
     }   
 }
 async function themeInit(themepicked) {
-    const themefiletofetch = "assets/themes/" + themepicked + ".txt"
+    const themefiletofetch = "../../assets/themes/" + themepicked + ".txt"
     let themearray = await loadTxtFile(themefiletofetch);
     document.querySelector(':root').style.setProperty('--primary-text-color', themearray[0]);
     document.querySelector(':root').style.setProperty('--reverse-text-color', themearray[1]);
@@ -21,9 +21,7 @@ async function themeInit(themepicked) {
     document.querySelector(':root').style.setProperty('--background-color-base', themearray[3]);
     document.querySelector(':root').style.setProperty('--item-color', themearray[4]);
     if (themepicked == "dark") {
-        addCSS(".newscard > div > img{ filter:none; }")
-        addCSS(".contact-info > span > a > img{ filter:invert(); }")
-        addCSS(".contact-info > span > span > img{ filter:invert(); }")
+        addCSS(".content > span > img{ filter:invert(); }")
     }
 }
 
