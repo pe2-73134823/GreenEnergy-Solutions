@@ -24,3 +24,6 @@ Q3-25-title
 Q3-25-sub
 Q2-26-1
 Q2-26-2
+cookie-title
+cookie-details
+cookie-consent-button

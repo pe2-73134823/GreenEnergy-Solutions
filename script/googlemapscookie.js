@@ -1,0 +1,3 @@
+function loadmaps() {
+    document.getElementById("map-placeholder").innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.3156723260001!2d18.0684596!3d59.327683400000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d5f52719601%3A0xb6292de327d1f3e2!2sRiksgatan%201%2C%20100%2012%20Stockholm!5e0!3m2!1ssv!2sse!4v1779350894377!5m2!1ssv!2sse" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google maps showing Riksgatan 1, 100 12 Stockholm, Sweden"></iframe>';
+}
