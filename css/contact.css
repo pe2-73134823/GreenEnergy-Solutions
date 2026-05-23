@@ -86,7 +86,7 @@ footer {
     }
     .map-placeholder {
         width: 100%;
-        border-top-right-radius: 0px;
+        border-top-right-radius: 0px !important;
         border-bottom-left-radius: 10px !important;
     }
     footer {
