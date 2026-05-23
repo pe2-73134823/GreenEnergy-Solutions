@@ -126,14 +126,15 @@ header > button:active {
     width: 100%;
     margin-top: 0px;
 }
-.banner-card > div > h4 {
-    margin-top: 15px;
+.banner-card > div > h2 {
+    margin-top: 10px;
+    font-size: medium;
 }
 .banner-card > div > p {
-    margin-top: -15px;
+    margin-top: -10px;
 }
 .banner-card > div > img {
-    margin-top: -10px;
+    margin-top: -15px;
     width: 20px;
     height: 20px;
     transition: 300ms;
@@ -230,8 +231,9 @@ h1 {
     align-content: stretch;
     align-items: center;
 }
-.newscard > div > h4 {
+.newscard > div > h3 {
     margin-top: 15px;
+    font-size: medium;
 }
 .newscard > div > p {
     margin-top: -15px;
@@ -313,7 +315,7 @@ footer > a {
         font-size: 120%;
         margin: 2px;
     }
-    h4 {
+    h3 {
         font-size: 2vh;
     }
     .newscards {
