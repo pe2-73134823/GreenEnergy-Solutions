@@ -68,7 +68,6 @@ header > button:active {
     background-image: url("https://pe2-73134823.github.io/GreenEnergy-Solutions/assets/images/forest.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: length;
     width: 100%;
     height: 60vh;
     max-height: 500px;
