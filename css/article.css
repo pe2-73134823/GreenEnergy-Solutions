@@ -10,10 +10,13 @@ h2,h3 {
     line-height:1.4;
     text-align: center;
 }
-.content > img {
-    margin:40px auto;
+.content > span {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.content > span > img {
     max-width:300px;
-    padding:0 150px;
 }
 footer {
     margin-top: 50px;
